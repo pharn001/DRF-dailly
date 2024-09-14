@@ -13,4 +13,4 @@ class OrderItem(models.Model):
     quantity = models.IntegerField()
 
     def __str__(self):
-        return f"{self.product_name} ({self.quantity})"
+        return f"{self.products_name} ({self.quantity})"
