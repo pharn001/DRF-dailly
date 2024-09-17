@@ -11,6 +11,10 @@ class OrderItem(models.Model):
     order = models.ForeignKey(Order,related_name='items', on_delete=models.CASCADE)
     products_name = models.CharField(max_length=100)
     quantity = models.IntegerField()
+    
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    image = models.ImageField(upload_to='uploads/')
 
     def __str__(self):
         return f"{self.products_name} ({self.quantity})"
