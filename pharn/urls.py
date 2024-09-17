@@ -3,7 +3,6 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path,include
 from rest_framework import routers
-
 from pharn.quickstart import views
 
 router = routers.DefaultRouter()
@@ -15,7 +14,7 @@ urlpatterns = [
     path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
     
     path('',include('nestedCreation.urls')),
-    path('thumbnails/', include('thumnail.urls')), 
+    path('', include('thumnail.urls')), 
 ]
 
 if settings.DEBUG:

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'pharn',
     'nestedCreation',
-    'thumnail.urls',
+    'sorl.thumbnail',
     'thumnail'
  ]
 
@@ -121,7 +121,7 @@ USE_I18N = True
 USE_TZ = True
 
 import os
-MEDIA_URL = 'media'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 # Static files (CSS, JavaScript, Images)
