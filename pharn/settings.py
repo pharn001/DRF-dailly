@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'pharn',
     'nestedCreation',
     'sorl.thumbnail',
-    'thumnail'
+    'thumnail',
+    'casbin2',
  ]
 
 MIDDLEWARE = [
@@ -133,3 +134,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CASBIN_MODEL = "path/to/model.cof"
+CASBIN_POLICY = 'path/to/policy.csv'

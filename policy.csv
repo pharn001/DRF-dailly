@@ -1,0 +1,6 @@
+# Define admin permissions
+p, admin, /data, GET
+p, user, /data, GET
+p, alice ,admin 
+p, dob ,user
+

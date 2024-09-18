@@ -15,6 +15,7 @@ urlpatterns = [
     
     path('',include('nestedCreation.urls')),
     path('', include('thumnail.urls')), 
+    path('', include('casbin2.urls')), 
 ]
 
 if settings.DEBUG:
